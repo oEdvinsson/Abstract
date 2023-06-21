@@ -26,6 +26,7 @@ section {
     height: 450px;
     background-color: #DADBF1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -43,8 +44,8 @@ section {
 
 input {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 750px;
+    height: 60px;
     padding: 0.5em 1em;
     font-size: 20px;
     font-family: "GT America Standard", sans-serif;
@@ -53,16 +54,22 @@ input {
     color: #000000;
     background-color: #fff;
     background-image: none;
-    border: 1px solid #dee2e6;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
 }
 
 .category-list-items {
+    padding: 0px 30px;
+}
+
+.category-list-container {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .category-list-item {
-    display: flex;
     margin-bottom: 3rem;
     padding-right: 15px;
 }
@@ -76,11 +83,14 @@ input {
 
 .footer {
     position: relative;
-    padding-bottom: 60px;
     color: white;
     background-color: black;
     font-family: 'GT America Standard', sans-serif;
     font-weight: 400;
+    padding: 60px 30px 60px 30px;
+}
+
+.footer-inner-container {
     display: flex;
 }
 
@@ -90,15 +100,35 @@ input {
 
 }
 
+.footer-column img {
+    width: 45px;
+    height: 45px;
+    margin-top: auto;
+    margin-left: 220px;
+}
+
+.copyright-container p {
+    margin-left: 816px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
 .footer-column a {
     font-size: 16px;
-    line-height: 24px;
     font-family: 'GT America Standard', sans-serif;
     font-weight: 400;
     color: white;
     text-decoration: none;
 }
 
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
 h3, strong {
     padding: 6px 22px;
+}
+
+p {
+    font-size: 20px;
 }
